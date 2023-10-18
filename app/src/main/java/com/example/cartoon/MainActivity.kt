@@ -244,34 +244,3 @@ class MainActivity : ComponentActivity() {
 
 
 
-/** commenting out this section of code because it is not currently in use, if in future anyone wants to
-     * to use it please comment out this section.
-     */
-    /**
-    private fun inferenceWithFp16Model(sourceImage: TensorImage): TensorImage {
-        val model = WhiteboxCartoonGanFp16.newInstance(this)
-
-        // Runs model inference and gets result.
-        val outputs = model.process(sourceImage)
-        val cartoonizedImage = outputs.cartoonizedImageAsTensorImage
-
-        // Releases model resources if no longer used.
-        model.close()
-
-        return cartoonizedImage
-    }
-
-    private fun inferenceWithDrModel(sourceImage: TensorImage): TensorImage {
-        val model = WhiteboxCartoonGanDr.newInstance(this)
-
-        // Runs model inference and gets result.
-        val outputs = model.process(sourceImage)
-        val cartoonizedImage = outputs.cartoonizedImageAsTensorImage
-
-        // Releases model resources if no longer used.
-        model.close()
-
-        return cartoonizedImage
-    }
-    */
-
